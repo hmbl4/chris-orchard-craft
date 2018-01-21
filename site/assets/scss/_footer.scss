@@ -1,0 +1,136 @@
+// .footer{
+//   background-color: $black;
+//   @extend .pt-6;
+// }
+//
+// .footer__container{
+//
+// }
+//
+// .footer__col{
+//   @extend .px-lg-paragraph, .mb-5, .mb-lg-6;
+// }
+//
+// .footer__-__title{
+//   color: $white;
+//   font-size: 1.5rem;
+//   // text-transform: lowercase;
+//   @extend .mb-paragraph;
+// }
+//
+//
+// .footer__action{
+//   @extend .footer__col;
+// }
+//
+// .footer__action__title{
+//   @extend .footer__-__title ;
+// }
+//
+// .footer__action__lead{
+//   color: $white;
+//   font-size: 0.875rem;
+//   max-width: 20ch;
+//   @extend .mb-4;
+// }
+//
+// .footer__action__button{
+//   @extend .button--white;
+// }
+//
+// .footer__contact{
+//   @extend .footer__col;
+// }
+//
+// .footer__contact__title{
+//   @extend .footer__-__title ;
+// }
+//
+// .footer__contact__detail{
+//   @extend .d-flex, .justify-content-start;
+//   position: relative;
+//   color: $white;
+//   &:hover{
+//     text-decoration: none;
+//     .footer__contact__detail__text{
+//       color: $white;
+//
+//       &:after{
+//         width: 100%;
+//       }
+//
+//     }
+//   }
+// }
+// .footer__contact__detail__text{
+//   margin-left: 1.5em;
+//   position: relative;
+//   &:after{
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     width: 0;
+//     height: 1px;
+//     background-color: $white;
+//     transition: width 0.3s ease-in-out;
+//   }
+// }
+//
+// .footer__contact__detail__icon{
+//   width: 1em;
+//   height: 1em;
+//   display: inline-flex;
+//   align-self: center;
+//   top: .125em;
+//   margin-right: 0.5em;
+//   position: absolute;
+// }
+//
+//
+// .footer__nav{
+//   @extend .footer__col;
+// }
+//
+// .footer__nav__title{
+//   @extend .footer__-__title ;
+// }
+//
+// .footer__nav a.footer__nav__items{
+//   @extend .mb-2;
+//   display: block;
+//   color: $white;
+//   position: relative;
+//   &:after{
+//     content: '';
+//     display: block;
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     width: 0;
+//     height: 1px;
+//     background-color: $white;
+//     transition: width 0.3s ease-in-out;
+//   }
+//   &:hover{
+//     cursor: pointer;
+//     color: $white;
+//     &:after{
+//       width: 100%;
+//     }
+//   }
+//
+// }
+//
+// .footer__legal{
+//   @extend .py-4;
+//   border-top: 1px solid rgba($white, .1);
+// }
+//
+// .footer__legal__text{
+//   @extend .mb-0;
+//   font-size: 0.875rem;
+//   color: $white;
+//   text-align: center;
+// }

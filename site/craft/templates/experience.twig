@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Experience - Chris Orchard - Registered Valuer</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-81310104-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-81310104-2');
+    </script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/manifest.json">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#1a3a5a">
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
+    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#1a3a5a">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>  </body>
+    <link rel="stylesheet" type="text/css" href="{{siteUrl}}assets/css/all.css">
+
+  </head>
+  <body>
+    <div class="container-fluid" style="background-color:#444444;">
+    <nav class="navbar navbar-toggleable-md bg-dark navbar-inverse container" style="padding-left:0;padding-right:0;">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="{{siteUrl}}">Chris Orchard</a>
+        <a class="navbar-brand navbar-brand-subtitle"  href="{{siteUrl}}">Registered Valuer</a>
+        <div class="collapse navbar-collapse navbar-fullscreen" id="navbarText">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link nav__text" href="{{siteUrl}}about">About <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__text" href="{{siteUrl}}services">Services</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link nav__text" href="{{siteUrl}}experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__text" href="{{siteUrl}}employment">Employment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav__text" href="{{siteUrl}}contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class=" container-fluid header__content">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <h2 class="header__header__text p-3 pt-4 pt-sm-5 text-center">Experience</h1>
+            <hr class="title-rule">
+        </div>
+      </div>
+    </div>
+<div class="container">
+  <div class="row justify-content-center pt-5">
+    <div class="col-md-8">
+      <div class="row align-items-center ">
+        <div class="col-sm-5 col-lg-5">
+          {% if entry.image | length %}
+              {% for asset in entry.image %}
+              <img src="{{siteUrl}}assets/images/{{ asset.filename }}" class="about__image img-fluid"  alt="">
+              {% endfor %}
+          {% endif %}
+        </div>
+        <div class="col-sm-7 col-lg-7 pt-3 pt-md-0">
+          <h3 class="about__header__content text-left text-sm-left"> {{entry.imageHeader}}
+          </h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row justify-content-center pt-3">
+    <div class="col-md-8">
+      <div class="text-justify">
+        {{entry.textContent}}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid footer__bg py-4 mt-5">
+  <div class="container ">
+    <div class="row">
+      <div class="col-md-6 mt-auto text-white d-flex justify-content-center justify-content-md-start py-3">
+        <img src="assets/images/logo-min.jpg" style="width:7.80rem;height:2rem;text-align:center;" class=" " alt=""></img>
+      </div>
+      <div class="col-md-6 text-white text-center text-md-right ">
+        {% for item in contact.contactDetails %}
+          {% if item.heading != "Physical Address" %}
+            <p>
+              <span class="footer__contact__label">{{ item.heading }}</span><br>
+              <a class="footer__contact__label__link"> {{ item.detail }}</a>
+            </p>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

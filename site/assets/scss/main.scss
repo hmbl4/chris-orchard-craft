@@ -1,0 +1,47 @@
+@import "custom";
+
+@import "./../../vendor/aos/dist/aos.css";
+@import "./../../vendor/selectize/dist/css/selectize.css";
+// bower:scss
+@import "./site/craft/html/vendor/bootstrap/scss/bootstrap.scss";
+@import "./site/craft/html/vendor/font-awesome/scss/font-awesome.scss";
+@import "./site/craft/html/vendor/css-hamburgers/_sass/hamburgers/hamburgers.scss";
+// endbower
+
+@import "scaffolding";
+@import "fonts";
+@import "styleguide";
+@import "navigation";
+@import "footer";
+@import "forms";
+@import "home";
+@import "footer-new";
+@import "forms-new";
+@import "noui";
+@import "noui-custom";
+@import "aos";
+@import "test";
+
+
+.btn-primary{
+  font-family: 'nexa-regular';
+  border-radius: 2rem;
+  min-width:14rem;
+  background-color: #FF6E26;
+  border-color: #FF6E26;
+  &:active{
+    background-color: darken(#FF6E26, 0.15);
+    border-color: darken(#FF6E26, 0.15);
+  }
+}
+
+@include media-breakpoint-up(lg){
+  .btn--nominate--option{
+    min-width:17rem;
+  }
+}
+
+
+.js-staff-quantity{
+  display:none;
+}

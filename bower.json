@@ -1,0 +1,22 @@
+{
+  "name": "craftgulp",
+  "version": "0.0.0",
+  "authors": [
+    "Mathias Stav <mathias@feed.no>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.2.0",
+    "bootstrap": "v4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
+    "jquery-ui": "^1.12.1",
+    "css-hamburgers": "^0.9.1",
+    "aos": "^2.2.0",
+    "popper.js": "^1.12.3",
+    "tooltip.js": "https://unpkg.com/tooltip.js",
+    "sequencejs": "^2.1.0",
+    "selectize": "^0.12.4",
+    "nouislider": "^10.1.0"
+  }
+}

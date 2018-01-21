@@ -1,0 +1,64 @@
+.noUi-background {
+    height: 16px;
+}
+.noUi-background.noUi-vertical {
+    height: 200px;
+    width: 16px;
+    margin: 0 auto 30px;
+}
+.noUi-base .noUi-connect {
+    background-color: #e4eeef;
+}
+.noUi-base .noUi-handle {
+    background-color: #fa4616;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: none;
+    color: #FFFFFF;
+    display: table;
+    font-size: 15px;
+    height: 25px;
+    left: 0;
+    margin-left: -10px;
+    margin-top: -5px;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 25px;
+    z-index: 2;
+}
+.noUi-horizontal .noUi-base .noUi-handle {
+    cursor: ew-resize;
+}
+.noUi-vertical .noUi-base .noUi-handle {
+    cursor: ns-resize;
+    margin-left:-8px;
+}
+.noUi-base .noUi-handle:hover {
+    background-color: #ff4c1a;
+}
+.noUi-base .noUi-handle.noUi-active {
+    background-color: #ec4218;
+    z-index: 3;
+}
+.noUi-base .noUi-handle::before {
+    background: transparent;
+    content: attr(data-value);
+    display: table-cell;
+    font-size: 12px;
+    font-weight: 100;
+    position: static;
+    width: 100%;
+    vertical-align: middle;
+}
+.noUi-base .noUi-handle::after {
+    display: none;
+}
+
+
+// custom
+.noui-label{
+  text-align: center;
+  font-size:.8rem;
+}
