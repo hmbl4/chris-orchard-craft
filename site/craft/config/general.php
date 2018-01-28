@@ -8,7 +8,8 @@ return array(
   '*' => array(
     'omitScriptNameInUrls' => true,
     'sendPoweredByHeader' => false,
-    'devMode' => getenv("CRAFT_DEVMODE") == "true"
+    'devMode' => getenv("CRAFT_DEVMODE") == "true",
+    'siteUrl' => getenv('SITE_URL')
   )
 );
 ?>
